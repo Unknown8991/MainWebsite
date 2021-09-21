@@ -36,7 +36,7 @@ class Navigation extends React.Component {
                 <div className="half-circle" style={this.state.isActive ? null : styles.navActive}>
                     <nav className="navigation col-md-12" style={this.state.isActive ? null : styles.novisible}>
                         <ul className="item-list-left col-md-6">
-                            <li className="list"><NavLink exact to="/"  ><img src={man} alt="" className="img-left" /></NavLink></li>
+                            <li className="list"><NavLink exact to="/home"  ><img src={man} alt="" className="img-left" /></NavLink></li>
                             <li className="list"><NavLink to="technologies"><img src={project} alt="" className="img-left" /></NavLink></li>
                         </ul>
                         <ul className="item-list-right col-md-6">

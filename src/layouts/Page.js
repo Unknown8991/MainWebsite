@@ -8,7 +8,7 @@ import Contact from '../pages/Contact.js';
 const Page = () => {
     return ( 
         <>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/home" component={Home} />
             <Route path="/technologies" component={Technologies} />
             <Route path="/hobby" component={Hobby} />
             <Route path="/contact" component={Contact} />

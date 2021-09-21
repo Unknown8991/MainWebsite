@@ -1,0 +1,99 @@
+.main-banner{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    &--left{
+        align-items: center;
+        font-size: 120px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    &--right{
+        color: black;
+    }
+    &__list{
+        background: -webkit-linear-gradient(45deg, #b40ca6, #d4c706);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: moveText 1s infinite;
+    }
+}
+.colorful-darkmode-banner{
+        background: -webkit-linear-gradient(45deg, #e031d2, #44dbb5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: moveText 1s infinite;
+}
+.text{
+
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+    &--name{
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    &--tech{
+        text-transform: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+}
+@media (max-width: 768px) {
+    .main-banner{
+        flex-direction: column;
+    }
+    .text{
+        font-size: 18px;
+    }
+    .banner{
+        height: 100%;
+    }
+    .banner--left{
+        font-size:60px ;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 60px;
+    }
+    .banner--right{
+        align-items:flex-start;
+        padding-top: 60px;
+    }
+    body{
+        overflow-y: hidden;
+    }
+    .text--tech{
+        font-size: 24px;
+    }
+}
+@media (max-width: 320px){
+    .banner--left{
+        margin-top: 0px;
+        font-size: 50px;
+    }
+}
+@keyframes moveText {
+    0%{
+        transform: translate(0px);
+    }
+
+    50%{
+        transform: translate(0px, 20px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}

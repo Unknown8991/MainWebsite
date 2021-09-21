@@ -1,0 +1,81 @@
+body{
+  background: linear-gradient(-45deg, rgb(199, 7, 173), rgb(6, 60, 160));
+
+  height: 100%;
+}
+html{
+  scrollbar-color: rgb(105, 9, 134) rgb(56, 35, 133);
+  scrollbar-width: thin;
+}
+div.App{
+  height: 100%;
+  width: 100%;
+}
+.dark-mode{
+  position: absolute;
+  left: 80%;
+  top: 2%;
+  height: 35px;
+  width: 80px;
+  background:#0000 ;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  box-shadow: inset 5px 11px 31px #d9d9d900, inset -5px -5px 36px #ffffff4a;
+  
+}
+.dark-mode-active{
+  position: absolute;
+  left: 80%;
+  top: 2%;
+  height: 35px;
+  width: 80px;
+  background:#0000 ;
+  box-shadow: inset 5px 11px 31px #d9d9d900, inset -5px -5px 36px #ffffff4a;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+ 
+  
+}
+.switch-ball{
+  width: 35px;
+  height: 100%;
+  transition: all 2s ease-in;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #D1D8EC;
+
+}
+.icon-darkMode{
+  width: 20px;
+  height: 20px;
+  
+}
+.dark{
+  background: linear-gradient(-45deg, #0d172e, rgb(0, 0, 0));
+  transition: all 0.5s ease-in;
+}
+.darkMode-text{
+  color: white !important;
+  transition: all 0.5s ease-in;
+}
+@media (max-width: 768px){
+  .dark-mode{
+      left: 70%;
+  }
+  .dark-mode-active{
+    left: 70%;
+  }
+}
+
+.test{
+  color: white !important;
+}

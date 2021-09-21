@@ -1,0 +1,103 @@
+.hobby-page{
+    height: 100vh;
+}
+
+.hobbyWrapper{
+    margin-top: 180px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.hobby-box{
+    font-size: 18px;
+    
+    &__left{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+    &__right{
+        background: #ffffffa8;
+        padding: 60px 20px;
+        border-radius: 20px;
+    }
+}
+.icon-gh{
+    height: 50px;
+}
+.photo-ig{
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(65, 66, 89, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(65, 66, 89, 1);
+    box-shadow: 8px 8px 24px 0px rgba(65, 66, 89, 1);
+    &__big{
+        width: 220px;
+        height: 100%;
+        animation: move1 6s infinite;
+    }
+    &__medium{
+        margin: -60px;
+        width: 200px;
+        height: 71%;
+        z-index: -1;
+    }
+    &__small{
+        width: 213px;
+        height: 77%;
+        margin: 116px -85px;
+        z-index: 1;
+        animation: move2 6s infinite;
+    }
+
+    @keyframes move1{
+        0%{
+            transform: translate(0px);
+        }
+        50%{
+            transform: translate(20px, 20%);
+        }
+        100%{
+            transform: translate(0px);
+        }
+    }
+    @keyframes move2{
+        0%{
+            transform: translate(0px);
+        }
+        50%{
+            transform: translate(-20px, -20%);
+        }
+        100%{
+            transform: translate(0px);
+        }
+    }
+}
+.text-hobby{
+    color: black;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .hobbyWrapper{
+        flex-direction: column;
+        height: 200px;
+    }
+    .hobby-box__left{
+     display: none;   
+    }
+    .hobby-box__right{
+     margin-top: 80px;  
+    }
+
+}
+.hobby-color-text{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    background: -webkit-linear-gradient(45deg, #b40ca6, #d4c706);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
